@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Политика обработки персональных данных — LeadHunt</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .legal { padding: 90px 0; max-width: 780px; margin: 0 auto; }
+  .legal h1 { font-size: 32px; margin-bottom: 24px; }
+  .legal h2 { font-size: 20px; margin: 32px 0 12px; }
+  .legal p, .legal li { color: var(--ink-soft); font-size: 15px; margin-bottom: 12px; }
+  .legal ul { padding-left: 20px; }
+  .legal a { color: var(--accent); text-decoration: underline; }
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header__inner container">
+    <a href="index.html" class="logo">LEAD<span>HUNT</span></a>
+    <a href="index.html" class="btn btn--ghost">На главную</a>
+  </div>
+</header>
+<main class="container">
+  <section class="legal">
+    <h1>Политика обработки персональных данных</h1>
+    <p>Настоящая политика действует в отношении всей информации, которую сайт может получить о пользователе во время использования формы обратной связи.</p>
+
+    <h2>1. Какие данные собираются</h2>
+    <ul>
+      <li>Имя;</li>
+      <li>Номер телефона или контакт в Telegram;</li>
+      <li>Ниша, город и комментарий к заявке (по желанию пользователя).</li>
+    </ul>
+
+    <h2>2. Цель обработки данных</h2>
+    <p>Данные используются исключительно для связи с пользователем по оставленной заявке и не передаются третьим лицам, за исключением технических сервисов, обеспечивающих доставку заявки (мессенджер Telegram).</p>
+
+    <h2>3. Хранение данных</h2>
+    <p>Персональные данные хранятся в течение срока, необходимого для обработки заявки, и не используются для рассылок без согласия пользователя.</p>
+
+    <h2>4. Согласие пользователя</h2>
+    <p>Заполняя форму на сайте, пользователь даёт согласие на обработку указанных персональных данных на условиях настоящей политики.</p>
+
+    <h2>5. Контакты</h2>
+    <p>По всем вопросам, связанным с обработкой персональных данных, можно обратиться через Telegram: <a href="https://t.me/Ilnur0990" target="_blank" rel="noopener">@Ilnur0990</a>.</p>
+  </section>
+</main>
+<footer class="footer">
+  <div class="container footer__bottom">
+    <span>© <span id="year"></span> LeadHunt. Все права защищены.</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
