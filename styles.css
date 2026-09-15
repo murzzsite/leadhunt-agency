@@ -4,9 +4,9 @@
   --surface: #ffffff;
   --ink: #1c1e2e;
   --ink-soft: #5c6079;
-  --accent: #4338ca;
-  --accent-dark: #332aa3;
-  --gold: #65a30d;
+  --accent: #1d4fd8;
+  --accent-dark: #142f8f;
+  --gold: #0ea5c7;
   --border: #e2e4f1;
   --radius: 18px;
   --shadow: 0 20px 50px -30px rgba(28, 30, 46, 0.35);
@@ -59,7 +59,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; color: var(--ink);
   text-transform: uppercase;
   color: var(--accent);
   font-weight: 700;
-  background: rgba(67, 56, 202, 0.08);
+  background: rgba(29, 79, 216, 0.08);
   padding: 6px 14px;
   border-radius: 100px;
   margin-bottom: 20px;
@@ -81,7 +81,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; color: var(--ink);
   white-space: nowrap;
 }
 .btn--primary { background: var(--accent); color: #fff; }
-.btn--primary:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 12px 24px -12px rgba(67,56,202,0.55); }
+.btn--primary:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 12px 24px -12px rgba(29,79,216,0.55); }
 .btn--ghost { background: transparent; border-color: var(--border); color: var(--ink); }
 .btn--ghost:hover { border-color: var(--accent); color: var(--accent); }
 .btn--lg { padding: 15px 30px; font-size: 16px; }
@@ -110,6 +110,9 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; color: var(--ink);
 }
 .logo {
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--font-head);
   font-weight: 700;
   font-size: 19px;
@@ -117,6 +120,15 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; color: var(--ink);
   color: var(--ink);
 }
 .logo span { color: var(--accent); }
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px -4px rgba(29,79,216,0.4);
+}
+.logo-mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .nav { display: flex; align-items: center; gap: 24px; }
 .nav a {
   white-space: nowrap;
@@ -174,7 +186,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; color: var(--ink);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--gold);
-  background: rgba(101, 163, 13, 0.12);
+  background: rgba(14, 165, 199, 0.12);
   padding: 5px 12px;
   border-radius: 100px;
   margin-bottom: 16px;
@@ -195,7 +207,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; color: var(--ink);
 .adv__icon {
   width: 46px; height: 46px;
   border-radius: 12px;
-  background: rgba(67, 56, 202, 0.08);
+  background: rgba(29, 79, 216, 0.08);
   color: var(--accent);
   display: flex; align-items: center; justify-content: center;
   margin-bottom: 18px;
@@ -213,7 +225,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; color: var(--ink);
   border-radius: var(--radius);
   padding: 28px;
 }
-.service--accent { border-color: var(--accent); background: rgba(67, 56, 202, 0.04); }
+.service--accent { border-color: var(--accent); background: rgba(29, 79, 216, 0.04); }
 .service__price { font-family: var(--font-head); font-weight: 700; font-size: 22px; color: var(--accent); margin-bottom: 10px; }
 .service h3 { font-size: 18px; margin-bottom: 8px; }
 .service p { font-size: 14.5px; color: var(--ink-soft); }
@@ -246,14 +258,14 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; color: var(--ink);
 .price__row:not(.price__row--head) span:first-child { font-weight: 700; }
 .price__row span:nth-child(2) { color: var(--ink-soft); font-size: 14.5px; }
 .price__row span:last-child { font-family: var(--font-head); font-weight: 700; color: var(--accent); text-align: right; }
-.price__row--accent { background: rgba(101, 163, 13, 0.08); }
+.price__row--accent { background: rgba(14, 165, 199, 0.08); }
 .price__note { text-align: center; margin-top: 24px; color: var(--ink-soft); font-size: 14px; }
 
 /* COMPARE */
 .compare { padding: 90px 0; }
 .compare__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .compare__card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 30px; }
-.compare__card--accent { border-color: var(--accent); background: rgba(67, 56, 202, 0.04); }
+.compare__card--accent { border-color: var(--accent); background: rgba(29, 79, 216, 0.04); }
 .compare__card h3 { font-size: 19px; margin-bottom: 18px; }
 .compare__list { list-style: none; display: flex; flex-direction: column; gap: 12px; }
 .compare__list li { font-size: 14.5px; color: var(--ink-soft); padding-left: 26px; position: relative; }
@@ -338,7 +350,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; color: var(--ink);
 .contact-card__icon {
   width: 40px; height: 40px;
   border-radius: 10px;
-  background: rgba(67, 56, 202, 0.08);
+  background: rgba(29, 79, 216, 0.08);
   color: var(--accent);
   display: flex; align-items: center; justify-content: center;
   font-size: 18px;
@@ -401,7 +413,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 700; color: var(--ink);
   background: var(--accent);
   color: #fff;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 14px 30px -10px rgba(67,56,202,0.6);
+  box-shadow: 0 14px 30px -10px rgba(29,79,216,0.6);
   z-index: 90;
   transition: transform 0.15s ease;
 }
