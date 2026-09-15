@@ -206,6 +206,7 @@
   .doc-bar__inner { padding: 12px 18px; }
   .doc-bar__back span { display: none; }
   .offer { flex-direction: column; gap: 6px; }
+  .offer__price { white-space: normal; }
 }
 
 @media print {
